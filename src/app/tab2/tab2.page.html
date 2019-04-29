@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color = "primary">
+    <ion-title>
+      Pagamentos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card padding *ngFor="let item of items">
+      <ion-row>
+        Ticket: {{item.Ticket}}
+      </ion-row>
+      Entrada: {{item.Entrada}} Saída: {{item.saida}}
+      <ion-row>
+        Valor pago: {{getValue(item)}}
+      </ion-row>
+
+    </ion-card>
+  </ion-list>
+</ion-content>
